@@ -1,0 +1,265 @@
+{
+  "_metadata": {
+    "document": "Supuestos y limitaciones del proyecto Metrolinea Simulator",
+    "route": "P19",
+    "created": "2026-11-21",
+    "version": "1.0",
+    "description": "Este archivo distingue explícitamente entre datos oficiales, datos derivados de fuentes abiertas y supuestos de simulación. Ningún valor hipotético debe interpretarse como dato oficial de Metrolínea."
+  },
+
+  "geographic_data": {
+    "description": "Información geográfica: fuentes y nivel de certeza",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "sources": [
+      {
+        "id": "SRC-01",
+        "name": "metrolinea.gov.co",
+        "type": "Fuente institucional oficial",
+        "usage": "Confirmación de existencia y nombres de estaciones/paradas",
+        "limitations": "No publica coordenadas GPS descargables públicamente"
+      },
+      {
+        "id": "SRC-02",
+        "name": "bucaramanga.gov.co",
+        "type": "Fuente institucional oficial",
+        "usage": "Confirmación de paradas de la ruta P19 por barrio",
+        "limitations": "Información de paradas, no coordenadas exactas"
+      },
+      {
+        "id": "SRC-03",
+        "name": "moovitapp.com",
+        "type": "Fuente colaborativa de transporte",
+        "usage": "Listado de paradas y trazado referencial de la P19",
+        "limitations": "Datos crowdsourced; requieren validación"
+      },
+      {
+        "id": "SRC-04",
+        "name": "mapcarta.com / maptons.com",
+        "type": "Geocodificación derivada de OSM",
+        "usage": "Coordenadas aproximadas de puntos de referencia",
+        "limitations": "Coordenadas aproximadas derivadas de OpenStreetMap, no levantadas en campo"
+      },
+      {
+        "id": "SRC-05",
+        "name": "holamigente.co",
+        "type": "Fuente periodística / comunitaria",
+        "usage": "Frecuencias operativas de la P19",
+        "limitations": "No es fuente oficial; frecuencias pueden no estar actualizadas"
+      },
+      {
+        "id": "SRC-06",
+        "name": "OpenStreetMap",
+        "type": "Cartografía colaborativa abierta",
+        "usage": "Geometría de calles para trazar el recorrido",
+        "limitations": "Datos colaborativos; calidad variable; no reflejan operación oficial"
+      },
+      {
+        "id": "SRC-07",
+        "name": "fosunab.com.co / foscal.com.co",
+        "type": "Fuente institucional directa",
+        "usage": "Coordenadas de FOSUNAB / Clínica FOSCAL",
+        "limitations": "Ninguna significativa para la ubicación"
+      },
+      {
+        "id": "SRC-08",
+        "name": "canaveral.com.co",
+        "type": "Fuente institucional directa",
+        "usage": "Coordenadas Centro Comercial Cañaveral",
+        "limitations": "Ninguna significativa para la ubicación"
+      }
+    ],
+    "coordinate_certainty_levels": {
+      "HIGH": "Coordenadas verificadas en múltiples fuentes independientes o tomadas de fuente institucional",
+      "MEDIUM": "Coordenadas aproximadas derivadas de geocodificación OSM o fuente única confiable",
+      "LOW": "Coordenadas estimadas a partir de referencias de calle/barrio; requieren validación de campo",
+      "PENDING": "Ubicación no verificada; coordenada ausente o no confirmada"
+    },
+    "route_geometry_note": "El trazado geográfico de la ruta (LineString en GeoJSON) fue construido siguiendo las calles reales de Bucaramanga y Floridablanca según la cartografía OSM disponible. NO se utilizaron líneas rectas entre paradas. Los segmentos intermedios fueron derivados de la geometría vial. Este trazado es una aproximación y NO constituye el trazado oficial de Metrolínea.",
+    "disclaimer": "Las coordenadas de paradas intermedias son aproximadas. La geometría del recorrido es derivada de cartografía abierta y no ha sido validada oficialmente por Metrolínea S.A. Para uso en producción se requiere validación con datos oficiales del ente gestor."
+  },
+
+  "operational_parameters": {
+    "description": "Parámetros operativos: fuentes y clasificación",
+    "items": [
+      {
+        "id": "OP-01",
+        "parameter": "Frecuencia en hora pico",
+        "value": "10-12 minutos",
+        "unit": "minutos entre buses",
+        "source": "SRC-05 (holamigente.co)",
+        "classification": "REFERENCIAL",
+        "note": "No es dato oficial publicado por Metrolínea; es referencia periodística"
+      },
+      {
+        "id": "OP-02",
+        "parameter": "Frecuencia en hora valle",
+        "value": "15 minutos",
+        "unit": "minutos entre buses",
+        "source": "SRC-05 (holamigente.co)",
+        "classification": "REFERENCIAL",
+        "note": "No es dato oficial"
+      },
+      {
+        "id": "OP-03",
+        "parameter": "Capacidad bus alimentador",
+        "value": 52,
+        "unit": "pasajeros totales (sentados + de pie)",
+        "source": "SRC-01 (metrolinea.gov.co) - rango 45-60",
+        "classification": "REFERENCIAL",
+        "note": "Se usa el valor medio del rango publicado. La P19 opera como ruta complementaria/alimentadora"
+      },
+      {
+        "id": "OP-04",
+        "parameter": "Capacidad bus padrón (default simulación)",
+        "value": 80,
+        "unit": "pasajeros totales",
+        "source": "SRC-01 (metrolinea.gov.co) - rango 80-90",
+        "classification": "REFERENCIAL",
+        "note": "Valor por defecto configurable. Puede variar según la flota asignada"
+      },
+      {
+        "id": "OP-05",
+        "parameter": "Velocidad promedio urbana sin tráfico",
+        "value": 25,
+        "unit": "km/h",
+        "source": "Estimación general para transporte urbano en meseta de Bucaramanga",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "No corresponde a dato medido. Ajustable en parámetros de simulación"
+      },
+      {
+        "id": "OP-06",
+        "parameter": "Velocidad mínima (tráfico alto)",
+        "value": 10,
+        "unit": "km/h",
+        "source": "Estimación para condiciones de congestión",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Hipotético; ajustable"
+      },
+      {
+        "id": "OP-07",
+        "parameter": "Tiempo de parada en estación",
+        "value": 30,
+        "unit": "segundos",
+        "source": "Estimación general para sistemas BRT/pretroncal",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Hipotético; ajustable"
+      }
+    ]
+  },
+
+  "simulation_parameters": {
+    "description": "Parámetros del modelo de simulación. TODOS son supuestos hipotéticos salvo indicación contraria.",
+    "items": [
+      {
+        "id": "SIM-01",
+        "parameter": "Distribución de llegada de pasajeros",
+        "value": "Poisson",
+        "rationale": "Distribución estándar para modelar llegadas aleatorias independientes en sistemas de colas",
+        "classification": "MODELO MATEMÁTICO",
+        "note": "Apropiada para sistemas de transporte; no calibrada con datos reales de Metrolínea"
+      },
+      {
+        "id": "SIM-02",
+        "parameter": "Tasa λ demanda baja",
+        "value": 0.5,
+        "unit": "pasajeros/minuto/estación",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Hipotético; representa hora valle o baja demanda"
+      },
+      {
+        "id": "SIM-03",
+        "parameter": "Tasa λ demanda media",
+        "value": 1.5,
+        "unit": "pasajeros/minuto/estación",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Hipotético; representa demanda regular"
+      },
+      {
+        "id": "SIM-04",
+        "parameter": "Tasa λ demanda alta",
+        "value": 3.0,
+        "unit": "pasajeros/minuto/estación",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Hipotético; representa hora pico"
+      },
+      {
+        "id": "SIM-05",
+        "parameter": "Factor de velocidad tráfico bajo",
+        "value": 1.0,
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Sin reducción de velocidad"
+      },
+      {
+        "id": "SIM-06",
+        "parameter": "Factor de velocidad tráfico medio",
+        "value": 0.75,
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Reducción del 25%. Hipotético."
+      },
+      {
+        "id": "SIM-07",
+        "parameter": "Factor de velocidad tráfico alto",
+        "value": 0.50,
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Reducción del 50%. Hipotético."
+      },
+      {
+        "id": "SIM-08",
+        "parameter": "Intervalo entre buses - alta frecuencia",
+        "value": 5,
+        "unit": "minutos",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Escenario favorable; por debajo del dato referencial de hora pico (10-12 min)"
+      },
+      {
+        "id": "SIM-09",
+        "parameter": "Intervalo entre buses - frecuencia media",
+        "value": 10,
+        "unit": "minutos",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Aproximadamente igual al dato referencial de hora pico"
+      },
+      {
+        "id": "SIM-10",
+        "parameter": "Intervalo entre buses - baja frecuencia",
+        "value": 20,
+        "unit": "minutos",
+        "classification": "SUPUESTO DE SIMULACION",
+        "note": "Escenario desfavorable; por encima del dato referencial de hora valle"
+      }
+    ]
+  },
+
+  "pending_validations": [
+    {
+      "id": "PV-01",
+      "item": "Coordenadas exactas de paradas intermedias en la zona norte (Villa Alegría, Kennedy, Hospital Norte)",
+      "status": "PENDIENTE",
+      "action_required": "Verificar con datos oficiales de Metrolínea o levantamiento GPS"
+    },
+    {
+      "id": "PV-02",
+      "item": "Existencia y ubicación de paradas: Diagonal 15, Estación San Mateo, Viaducto García Cadena",
+      "status": "PENDIENTE",
+      "action_required": "Las fuentes consultadas no confirman estas como paradas oficiales de la P19; requieren verificación"
+    },
+    {
+      "id": "PV-03",
+      "item": "Trazado exacto del recorrido en zona centro (Carrera 15, Diagonal 15)",
+      "status": "PENDIENTE",
+      "action_required": "Verificar con cartografía oficial o información publicada por Metrolínea"
+    },
+    {
+      "id": "PV-04",
+      "item": "Paradas del sentido Sur→Norte en zona Cañaveral (Paralela, Molinos, Hormigueros, Payador)",
+      "status": "APROXIMADO",
+      "action_required": "Coordenadas estimadas; verificar ubicación exacta"
+    },
+    {
+      "id": "PV-05",
+      "item": "Capacidad actual de buses asignados a la P19",
+      "status": "REFERENCIAL",
+      "action_required": "Confirmar tipo de vehículo asignado actualmente a esta ruta"
+    }
+  ]
+}

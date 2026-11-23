@@ -1,0 +1,292 @@
+{
+  "type": "FeatureCollection",
+  "_metadata": {
+    "route": "P19",
+    "direction": "Sur → Norte",
+    "direction_code": "SN",
+    "description": "Ruta P19 de Metrolínea — Recorrido Cañaveral → Café Madrid (Sur a Norte)",
+    "total_stops": 13,
+    "created": "2026-11-21",
+    "coordinate_system": "WGS84",
+    "geometry_source": "Derivado de cartografía OSM y referencias viales públicas. No es el trazado oficial de Metrolínea.",
+    "disclaimer": "El recorrido S→N toma vías DIFERENTES al N→S en los sectores Cañaveral-Provenza (Paralela, Molinos, Payador, Hormigueros) y Puerta del Sol. Esta diferencia es una característica real de la ruta P19 confirmada por múltiples fuentes.",
+    "corridor_description": "El recorrido S→N sale de Cañaveral por la Paralela, pasa por Molinos-Payador-Hormigueros, llega a Provenza Oriental, sube por la Autopista, pasa por Puerta del Sol y La Isla, luego por Antonia Santos, La Rosita, zona centro, Carrera 15, Portal Norte y sube al norte hasta Café Madrid.",
+    "approximate_total_distance_km": 17.2
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ruta P19 Sur-Norte — Tramo completo",
+        "route": "P19",
+        "direction": "Sur-Norte",
+        "color": "#3498db",
+        "weight": 4,
+        "opacity": 0.85
+      },
+      "geometry": {
+        "type": "LineString",
+        "_note": "Coordenadas [longitud, latitud]. El trazado S→N sigue vías distintas al N→S en la zona Cañaveral-Provenza: sale por la Paralela/Molinos/Payador/Hormigueros antes de llegar a Provenza Oriental.",
+        "coordinates": [
+          [-73.10895, 7.07426],
+          [-73.10980, 7.07550],
+          [-73.11000, 7.07600],
+          [-73.11043, 7.07689],
+          [-73.11050, 7.07900],
+          [-73.11000, 7.08100],
+          [-73.10950, 7.08300],
+          [-73.10900, 7.08200],
+          [-73.10870, 7.08500],
+          [-73.10850, 7.08700],
+          [-73.10900, 7.09000],
+          [-73.10900, 7.09100],
+          [-73.10980, 7.09400],
+          [-73.11100, 7.10000],
+          [-73.11200, 7.10200],
+          [-73.11274, 7.10416],
+          [-73.11400, 7.10600],
+          [-73.11600, 7.11000],
+          [-73.11800, 7.11400],
+          [-73.12000, 7.11800],
+          [-73.12190, 7.12260],
+          [-73.12300, 7.12400],
+          [-73.12420, 7.12610],
+          [-73.12480, 7.12640],
+          [-73.12500, 7.12650],
+          [-73.12700, 7.12660],
+          [-73.12900, 7.12700],
+          [-73.13100, 7.12700],
+          [-73.13300, 7.12800],
+          [-73.13500, 7.12900],
+          [-73.13700, 7.13100],
+          [-73.13900, 7.13300],
+          [-73.13350, 7.13300],
+          [-73.13380, 7.13500],
+          [-73.13400, 7.13700],
+          [-73.13430, 7.14000],
+          [-73.13460, 7.14200],
+          [-73.13480, 7.14470],
+          [-73.13450, 7.14800],
+          [-73.13490, 7.15000],
+          [-73.13505, 7.15212],
+          [-73.13600, 7.15000],
+          [-73.13700, 7.15200],
+          [-73.13820, 7.15400],
+          [-73.13850, 7.15600],
+          [-73.13910, 7.15800],
+          [-73.13980, 7.16000],
+          [-73.14010, 7.16200],
+          [-73.14062, 7.16402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-13",
+        "name": "Cañaveral (Terminal Sur)",
+        "type": "TERMINAL",
+        "sequence": 1,
+        "certainty": "HIGH",
+        "needs_validation": false,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10895, 7.07426]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-02",
+        "name": "Paralela Cañaveral",
+        "type": "BUS_STOP",
+        "sequence": 2,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.11000, 7.07600]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-03",
+        "name": "Puente Peatonal Molinos",
+        "type": "BUS_STOP",
+        "sequence": 3,
+        "certainty": "MEDIUM",
+        "needs_validation": true,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.11043, 7.07689]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-04",
+        "name": "Hormigueros",
+        "type": "BUS_STOP",
+        "sequence": 4,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10900, 7.08200]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-05",
+        "name": "Payador",
+        "type": "BUS_STOP",
+        "sequence": 5,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10850, 7.08700]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-06",
+        "name": "Estación Provenza Oriental",
+        "type": "TRANSFER_STATION",
+        "sequence": 6,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10900, 7.09100]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-09",
+        "name": "Antonia Santos",
+        "type": "BUS_STOP",
+        "sequence": 7,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12190, 7.12260]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-S-08",
+        "name": "Puerta del Sol",
+        "type": "BUS_STOP",
+        "sequence": 8,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.11274, 7.10416]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-08",
+        "name": "La Isla",
+        "type": "BUS_STOP",
+        "sequence": 9,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12420, 7.12610]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-07",
+        "name": "Puente Peatonal La Rosita",
+        "type": "BUS_STOP",
+        "sequence": 10,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12500, 7.12650]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-06",
+        "name": "Carrera 15 / CAI La Virgen",
+        "type": "BUS_STOP",
+        "sequence": 11,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13900, 7.13300]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-05",
+        "name": "Portal Norte",
+        "type": "TRANSFER_STATION",
+        "sequence": 12,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13480, 7.14470]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-01",
+        "name": "Café Madrid",
+        "type": "TERMINAL",
+        "sequence": 13,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.14062, 7.16402]
+      }
+    }
+  ]
+}

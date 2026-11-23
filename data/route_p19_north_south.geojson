@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "_metadata": {
+    "route": "P19",
+    "direction": "Norte → Sur",
+    "direction_code": "NS",
+    "description": "Ruta P19 de Metrolínea — Recorrido Café Madrid → Cañaveral (Norte a Sur)",
+    "total_stops": 13,
+    "created": "2026-11-21",
+    "coordinate_system": "WGS84",
+    "geometry_source": "Derivado de cartografía OSM y referencias viales públicas. No es el trazado oficial de Metrolínea.",
+    "disclaimer": "Este trazado sigue calles reales de Bucaramanga y Floridablanca según la información pública disponible. Los segmentos entre paradas siguen la geometría vial, no líneas rectas. Requiere validación con el ente gestor.",
+    "corridor_description": "El recorrido N→S utiliza la Carrera 15 en la zona norte, baja por el corredor central hacia la Diagonal 15 / Autopista, y continúa por la Autopista Bucaramanga-Floridablanca hacia Cañaveral.",
+    "approximate_total_distance_km": 16.8
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ruta P19 Norte-Sur — Tramo completo",
+        "route": "P19",
+        "direction": "Norte-Sur",
+        "color": "#2ecc71",
+        "weight": 4,
+        "opacity": 0.85
+      },
+      "geometry": {
+        "type": "LineString",
+        "_note": "Coordenadas [longitud, latitud]. El trazado sigue las vías reales: Sector norte (Kr10/Kr12/Kr15) → Centro (Cra 15/Diagonal 15) → Autopista Floridablanca → Cañaveral.",
+        "coordinates": [
+          [-73.14062, 7.16402],
+          [-73.14010, 7.16200],
+          [-73.13980, 7.16000],
+          [-73.13910, 7.15800],
+          [-73.13850, 7.15600],
+          [-73.13820, 7.15400],
+          [-73.13700, 7.15200],
+          [-73.13600, 7.15000],
+          [-73.13505, 7.15212],
+          [-73.13490, 7.15000],
+          [-73.13450, 7.14800],
+          [-73.13480, 7.14470],
+          [-73.13460, 7.14200],
+          [-73.13430, 7.14000],
+          [-73.13400, 7.13700],
+          [-73.13380, 7.13500],
+          [-73.13350, 7.13300],
+          [-73.13900, 7.13300],
+          [-73.13700, 7.13100],
+          [-73.13500, 7.12900],
+          [-73.13200, 7.12700],
+          [-73.12900, 7.12700],
+          [-73.12700, 7.12660],
+          [-73.12500, 7.12650],
+          [-73.12480, 7.12620],
+          [-73.12420, 7.12610],
+          [-73.12300, 7.12500],
+          [-73.12190, 7.12260],
+          [-73.12100, 7.12000],
+          [-73.11900, 7.11600],
+          [-73.11700, 7.11200],
+          [-73.11500, 7.10800],
+          [-73.11300, 7.10400],
+          [-73.11100, 7.10000],
+          [-73.11000, 7.09600],
+          [-73.10980, 7.09300],
+          [-73.10960, 7.09020],
+          [-73.10950, 7.08700],
+          [-73.10980, 7.08400],
+          [-73.11050, 7.08100],
+          [-73.11100, 7.07900],
+          [-73.11172, 7.07678],
+          [-73.11200, 7.07500],
+          [-73.11250, 7.07300],
+          [-73.11300, 7.07100],
+          [-73.11461, 7.06984],
+          [-73.11300, 7.07050],
+          [-73.11100, 7.07100],
+          [-73.10950, 7.07200],
+          [-73.10895, 7.07426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-01",
+        "name": "Café Madrid",
+        "type": "TERMINAL",
+        "sequence": 1,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.14062, 7.16402]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-02",
+        "name": "Villa Alegría",
+        "type": "BUS_STOP",
+        "sequence": 2,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13850, 7.16100]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-03",
+        "name": "Kennedy",
+        "type": "BUS_STOP",
+        "sequence": 3,
+        "certainty": "MEDIUM",
+        "needs_validation": true,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13505, 7.15212]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-04",
+        "name": "Hospital del Norte",
+        "type": "BUS_STOP",
+        "sequence": 4,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13400, 7.13500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-05",
+        "name": "Portal Norte",
+        "type": "TRANSFER_STATION",
+        "sequence": 5,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13480, 7.14470]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-06",
+        "name": "Carrera 15 / CAI La Virgen",
+        "type": "BUS_STOP",
+        "sequence": 6,
+        "certainty": "LOW",
+        "needs_validation": true,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.13900, 7.13300]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-07",
+        "name": "Puente Peatonal La Rosita",
+        "type": "BUS_STOP",
+        "sequence": 7,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12500, 7.12650]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-08",
+        "name": "Centro Comercial La Isla",
+        "type": "BUS_STOP",
+        "sequence": 8,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12420, 7.12610]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-09",
+        "name": "Antonia Santos",
+        "type": "BUS_STOP",
+        "sequence": 9,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Bucaramanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.12190, 7.12260]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-10",
+        "name": "Estación Provenza Occidental",
+        "type": "TRANSFER_STATION",
+        "sequence": 10,
+        "certainty": "MEDIUM",
+        "needs_validation": false,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10960, 7.09020]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-11",
+        "name": "Palomitas / Parque San Agustín",
+        "type": "BUS_STOP",
+        "sequence": 11,
+        "certainty": "MEDIUM",
+        "needs_validation": true,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.11172, 7.07678]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-12",
+        "name": "FOSUNAB",
+        "type": "BUS_STOP",
+        "sequence": 12,
+        "certainty": "HIGH",
+        "needs_validation": false,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.11461, 7.06984]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "S-N-13",
+        "name": "Cañaveral",
+        "type": "TERMINAL",
+        "sequence": 13,
+        "certainty": "HIGH",
+        "needs_validation": false,
+        "municipality": "Floridablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.10895, 7.07426]
+      }
+    }
+  ]
+}

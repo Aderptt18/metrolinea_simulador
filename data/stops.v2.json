@@ -1,0 +1,1334 @@
+{
+  "schema_version": "2.0",
+  "metadata": {
+    "route_id": "P19",
+    "coordinate_reference_system": "EPSG:4326",
+    "coordinate_order": "longitude_latitude",
+    "academic_reference_version": "p19-2026-08-31",
+    "legacy_snapshot": {
+      "file": "stops.legacy.json",
+      "source_file": "stops.json",
+      "sha256": "c67e4b7c5784b33dec4c232d3056e7940458a1ecb1022607e695d8f7560e3963"
+    },
+    "notes": "Textual order is not spatial progression. No source here resolves legacy point identities or validates boarding locations."
+  },
+  "sources": {
+    "metrolinea-2026-05-29": {
+      "publisher": "Metrolínea",
+      "published_at": "2026-05-29",
+      "url": "https://www.metrolinea.gov.co/v3.0/sitme-ajusta-sus-rutas-para-servirle-mejor-partir-del-31-de-mayo-2283",
+      "source_type": "official_operational_announcement"
+    },
+    "metrolinea-q2-2026": {
+      "publisher": "Metrolínea",
+      "published_at": null,
+      "period": "2026-Q2",
+      "url": "https://mail.metrolinea.gov.co/v3.0/sites/default/files/informe_de_gestion_2_trim_2026_con_anexos.pdf",
+      "source_type": "official_management_report"
+    },
+    "alcaldia-2026-08-31": {
+      "publisher": "Alcaldía de Bucaramanga",
+      "published_at": "2026-08-31",
+      "url": "https://www.bucaramanga.gov.co/noticias/ruta-complementaria-p19-incorpora-nuevos-medios-de-pago-y-fortalece/",
+      "source_type": "official_publication"
+    }
+  },
+  "versions": [
+    {
+      "id": "p19-2026-05-31",
+      "source_id": "metrolinea-2026-05-29",
+      "directions": {
+        "NS": {
+          "mentions": [
+            {
+              "mention_id": "may-ns-01",
+              "text": "Portal Norte",
+              "source_id": "metrolinea-2026-05-29",
+              "evidence_status": "explicit_endpoint",
+              "textual_order": null,
+              "order_basis": null,
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "may-ns-02",
+              "text": "Estación Provenza Occidental",
+              "source_id": "metrolinea-2026-05-29",
+              "evidence_status": "explicit_endpoint",
+              "textual_order": null,
+              "order_basis": null,
+              "entity_id": null,
+              "location": null
+            }
+          ]
+        },
+        "SN": {
+          "mentions": [
+            {
+              "mention_id": "may-sn-01",
+              "text": "Portal Norte",
+              "source_id": "metrolinea-2026-05-29",
+              "evidence_status": "explicit_endpoint",
+              "textual_order": null,
+              "order_basis": null,
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "may-sn-02",
+              "text": "Estación Provenza Oriental",
+              "source_id": "metrolinea-2026-05-29",
+              "evidence_status": "explicit_endpoint",
+              "textual_order": null,
+              "order_basis": null,
+              "entity_id": null,
+              "location": null
+            }
+          ]
+        }
+      },
+      "coverage_contexts": [
+        {
+          "mention_id": "may-p1-center",
+          "text": "conexión hacia y desde el centro de Bucaramanga por la carrera 15",
+          "source_id": "metrolinea-2026-05-29",
+          "evidence_status": "explicit_corridor_mention",
+          "textual_order": null,
+          "order_basis": null,
+          "entity_id": null,
+          "location": null,
+          "kind": "other_service_coverage",
+          "service_id": "P1"
+        }
+      ]
+    },
+    {
+      "id": "p19-q2-2026",
+      "source_id": "metrolinea-q2-2026",
+      "directions": {},
+      "corridor_trace": {
+        "id": "q2-p19-textual-trace",
+        "kind": "textual_corridor_trace",
+        "text": "Café Madrid – Villa Alegría – Kennedy – Hospital del Norte – Portal Norte – Vía al mar Bucaramanga – Cra 15 – Estación San Mateo – Diagonal 15 – Viaducto García Cadena – Estación Provenza Occidental – Paralela al Bosque – Calle 146 – Cra 22 – Palomitas – Calle 157 – Calle 29 – Cra 25 – Centro Comercial Cañaveral – Centro Comercial Caracolí – Paralela autopista Floridablanca Bucaramanga – Estación Provenza Oriental – Viaducto García Cadena – Diagonal 15 – Cra 15 – Estación San Mateo – Cra 15 – Vía al Mar Rionegro – Portal Norte – Kennedy – Villa Alegría – Café Madrid.",
+        "source_id": "metrolinea-q2-2026",
+        "evidence_status": "explicit_corridor_mention",
+        "textual_order": null,
+        "order_basis": null,
+        "entity_id": null,
+        "location": null,
+        "directional_partition": "not_stated_unambiguously"
+      },
+      "coverage_contexts": []
+    },
+    {
+      "id": "p19-2026-08-31",
+      "source_id": "alcaldia-2026-08-31",
+      "directions": {
+        "NS": {
+          "mentions": [
+            {
+              "mention_id": "aug-ns-01",
+              "text": "Café Madrid",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 1,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-02",
+              "text": "Portal del Norte",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 2,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-03",
+              "text": "Carrera 15 La Virgen",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 3,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-04",
+              "text": "Paradas Estaciones del Centro",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_group_mention",
+              "textual_order": 4,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-05",
+              "text": "Puente Peatonal La Rosita",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 5,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-06",
+              "text": "Centro Comercial La Isla",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 6,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-07",
+              "text": "Antonia Santos",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 7,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-08",
+              "text": "Estación de Transferencia Provenza Occidental",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 8,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-09",
+              "text": "Palomitas – Parque San Agustín",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 9,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-10",
+              "text": "FOSUNAB",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 10,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-11",
+              "text": "Centro Comercial Cañaveral",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 11,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-ns-12",
+              "text": "Centro Comercial Parque Caracolí",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 12,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            }
+          ]
+        },
+        "SN": {
+          "mentions": [
+            {
+              "mention_id": "aug-sn-01",
+              "text": "Paralela Cañaveral",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 1,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-02",
+              "text": "Puente Peatonal Molinos",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 2,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-03",
+              "text": "Hormigueros",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 3,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-04",
+              "text": "Payador",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 4,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-05",
+              "text": "Estación de Transferencia Provenza Oriental",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 5,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-06",
+              "text": "Antonia Santos",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 6,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-07",
+              "text": "Puerta del Sol",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 7,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-08",
+              "text": "La Isla",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 8,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-09",
+              "text": "Puente Peatonal La Rosita",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 9,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-10",
+              "text": "Estaciones del Centro",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_group_mention",
+              "textual_order": 10,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-11",
+              "text": "Carrera 15",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 11,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-12",
+              "text": "CAI La Virgen",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 12,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-13",
+              "text": "Colseguros",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 13,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-14",
+              "text": "Portal del Norte",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 14,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            },
+            {
+              "mention_id": "aug-sn-15",
+              "text": "Café Madrid",
+              "source_id": "alcaldia-2026-08-31",
+              "evidence_status": "explicit_route_mention",
+              "textual_order": 15,
+              "order_basis": "source_text_order",
+              "entity_id": null,
+              "location": null
+            }
+          ]
+        }
+      },
+      "coverage_contexts": []
+    }
+  ],
+  "stop_entities": [],
+  "legacy_records": [
+    {
+      "legacy_id": "S-N-01",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.14062,
+          7.16402
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-01",
+        "name": "Café Madrid",
+        "name_alt": [
+          "Terminal Café Madrid",
+          "Cabecera Norte"
+        ],
+        "type": "TERMINAL",
+        "direction": "both",
+        "sequence_north_south": 1,
+        "sequence_south_north": 13,
+        "coordinates": [
+          -73.14062,
+          7.16402
+        ],
+        "address_reference": "Sector Café Madrid, zona norte de Bucaramanga",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com"
+        ],
+        "needs_validation": false,
+        "notes": "Punto de partida norte de la ruta P19. Coordenada del sector Café Madrid según fuente derivada de OSM."
+      }
+    },
+    {
+      "legacy_id": "S-N-02",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1385,
+          7.161
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-02",
+        "name": "Villa Alegría",
+        "name_alt": [
+          "Br. Villa Alegría"
+        ],
+        "type": "BUS_STOP",
+        "direction": "north_south",
+        "sequence_north_south": 2,
+        "sequence_south_north": 12,
+        "coordinates": [
+          -73.1385,
+          7.161
+        ],
+        "address_reference": "Carrera 10 con Calle 31B Norte, Barrio Villa Alegría",
+        "municipality": "Bucaramanga",
+        "certainty": "LOW",
+        "sources": [
+          "moovitapp.com",
+          "bucaramanga.gov.co"
+        ],
+        "needs_validation": true,
+        "notes": "Parada confirmada por Moovit sobre Kr 10 - Cl 31B Norte. Coordenada estimada desde referencia vial."
+      }
+    },
+    {
+      "legacy_id": "S-N-03",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.13505,
+          7.15212
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-03",
+        "name": "Kennedy",
+        "name_alt": [
+          "Barrio Kennedy",
+          "Br. Balcones del Kennedy"
+        ],
+        "type": "BUS_STOP",
+        "direction": "north_south",
+        "sequence_north_south": 3,
+        "sequence_south_north": 11,
+        "coordinates": [
+          -73.13505,
+          7.15212
+        ],
+        "address_reference": "Carrera 12 sector Kennedy, Barrio Kennedy",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "moovitapp.com",
+          "mapcarta.com"
+        ],
+        "needs_validation": true,
+        "notes": "Coordenada del centro del Barrio Kennedy según mapcarta.com. La P19 tiene múltiples paradas en este barrio sobre Kr 12 y Kr 11."
+      }
+    },
+    {
+      "legacy_id": "S-N-04",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.134,
+          7.135
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-04",
+        "name": "Hospital del Norte",
+        "name_alt": [
+          "ESE Hospital Local del Norte",
+          "Minuto de Dios Norte"
+        ],
+        "type": "BUS_STOP",
+        "direction": "north_south",
+        "sequence_north_south": 4,
+        "sequence_south_north": 10,
+        "coordinates": [
+          -73.134,
+          7.135
+        ],
+        "address_reference": "Calle 12 # 10-05, Comuna 1 Norte",
+        "municipality": "Bucaramanga",
+        "certainty": "LOW",
+        "sources": [
+          "emab.gov.co",
+          "moovitapp.com"
+        ],
+        "needs_validation": true,
+        "notes": "El Hospital del Norte está en Calle 12, norte de Bucaramanga. Coordenada estimada desde dirección."
+      }
+    },
+    {
+      "legacy_id": "S-N-05",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1348,
+          7.1447
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-05",
+        "name": "Portal Norte",
+        "name_alt": [
+          "Portal Norte Ciudad Jardín",
+          "Portal Norte Metrolínea"
+        ],
+        "type": "TRANSFER_STATION",
+        "direction": "both",
+        "sequence_north_south": 5,
+        "sequence_south_north": 9,
+        "coordinates": [
+          -73.1348,
+          7.1447
+        ],
+        "address_reference": "Ciudad Jardín Norte, Vía al Mar / Anillo Vial norte de Bucaramanga",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com",
+          "metrolinea.gov.co"
+        ],
+        "needs_validation": false,
+        "notes": "Estación de transferencia principal del norte. Coordenada derivada de geocodificación OSM."
+      }
+    },
+    {
+      "legacy_id": "S-N-06",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.139,
+          7.133
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-06",
+        "name": "Carrera 15 / CAI La Virgen",
+        "name_alt": [
+          "CAI La Virgen",
+          "Colseguros Norte"
+        ],
+        "type": "BUS_STOP",
+        "direction": "both",
+        "sequence_north_south": 6,
+        "sequence_south_north": 8,
+        "coordinates": [
+          -73.139,
+          7.133
+        ],
+        "address_reference": "Carrera 15 con Calle 3 Norte, sector CAI La Virgen",
+        "municipality": "Bucaramanga",
+        "certainty": "LOW",
+        "sources": [
+          "moovitapp.com",
+          "bucaramanga.gov.co"
+        ],
+        "needs_validation": true,
+        "notes": "Parada confirmada en Kr 15 - Cl 3 Norte por Moovit. Coordenada estimada desde referencia vial. En sentido S-N se denomina también 'Colseguros'."
+      }
+    },
+    {
+      "legacy_id": "S-N-07",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.125,
+          7.1265
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-07",
+        "name": "Puente Peatonal La Rosita",
+        "name_alt": [
+          "La Rosita",
+          "Estación La Rosita"
+        ],
+        "type": "BUS_STOP",
+        "direction": "both",
+        "sequence_north_south": 7,
+        "sequence_south_north": 7,
+        "coordinates": [
+          -73.125,
+          7.1265
+        ],
+        "address_reference": "Diagonal 15 entre Calles 48 y 49, sector San Miguel / La Rosita",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "bucaramanga.gov.co",
+          "moovitapp.com"
+        ],
+        "needs_validation": false,
+        "notes": "Punto de referencia sobre Diagonal 15 confirmado en múltiples fuentes."
+      }
+    },
+    {
+      "legacy_id": "S-N-08",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1242,
+          7.1261
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-08",
+        "name": "Centro Comercial La Isla",
+        "name_alt": [
+          "La Isla",
+          "Sanandresito La Isla"
+        ],
+        "type": "BUS_STOP",
+        "direction": "both",
+        "sequence_north_south": 8,
+        "sequence_south_north": 6,
+        "coordinates": [
+          -73.1242,
+          7.1261
+        ],
+        "address_reference": "Diagonal 15 entre Calles 56 y 58, sector La Isla / Puerta del Sol",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "moovitapp.com",
+          "bucaramanga.gov.co"
+        ],
+        "needs_validation": false,
+        "notes": "Sector comercial de La Isla sobre Diagonal 15. Coordenada confirmada en múltiples fuentes."
+      }
+    },
+    {
+      "legacy_id": "S-N-09",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1219,
+          7.1226
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-09",
+        "name": "Antonia Santos",
+        "name_alt": [
+          "Parque Antonia Santos"
+        ],
+        "type": "BUS_STOP",
+        "direction": "both",
+        "sequence_north_south": 9,
+        "sequence_south_north": 5,
+        "coordinates": [
+          -73.1219,
+          7.1226
+        ],
+        "address_reference": "Sector Antonia Santos, entre Carreras 21-22, Bucaramanga",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com"
+        ],
+        "needs_validation": false,
+        "notes": "Parque y sector Antonia Santos. Coordenada verificada en mapcarta."
+      }
+    },
+    {
+      "legacy_id": "S-N-10",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1096,
+          7.0902
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-10",
+        "name": "Estación Provenza Occidental",
+        "name_alt": [
+          "Provenza Occidental",
+          "Estación Transferencia Provenza"
+        ],
+        "type": "TRANSFER_STATION",
+        "direction": "north_south",
+        "sequence_north_south": 10,
+        "sequence_south_north": null,
+        "coordinates": [
+          -73.1096,
+          7.0902
+        ],
+        "address_reference": "Autopista Floridablanca / Carrera 26, sector Provenza",
+        "municipality": "Floridablanca",
+        "certainty": "MEDIUM",
+        "sources": [
+          "maptons.com",
+          "metrolinea.gov.co"
+        ],
+        "needs_validation": false,
+        "notes": "Estación de transferencia sentido N→S. La versión Oriental (S→N) es una infraestructura diferente en la misma zona."
+      }
+    },
+    {
+      "legacy_id": "S-N-11",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.11172,
+          7.07678
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-11",
+        "name": "Palomitas / Parque San Agustín",
+        "name_alt": [
+          "Palomitas",
+          "San Agustín"
+        ],
+        "type": "BUS_STOP",
+        "direction": "north_south",
+        "sequence_north_south": 11,
+        "sequence_south_north": null,
+        "coordinates": [
+          -73.11172,
+          7.07678
+        ],
+        "address_reference": "Sector Palomitas / Carrera 21, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com"
+        ],
+        "needs_validation": true,
+        "notes": "Coordenada del barrio Palomitas. Verificar si la parada es exactamente en este punto o sobre la autopista."
+      }
+    },
+    {
+      "legacy_id": "S-N-12",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.11461,
+          7.06984
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "HIGH",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-12",
+        "name": "FOSUNAB",
+        "name_alt": [
+          "Clínica FOSCAL",
+          "FOSUNAB / FOSCAL Internacional"
+        ],
+        "type": "BUS_STOP",
+        "direction": "north_south",
+        "sequence_north_south": 12,
+        "sequence_south_north": null,
+        "coordinates": [
+          -73.11461,
+          7.06984
+        ],
+        "address_reference": "Calle 157 # 23-99, sector El Bosque / Cañaveral, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "HIGH",
+        "sources": [
+          "fosunab.com.co",
+          "foscal.com.co",
+          "mapcarta.com",
+          "maptons.com"
+        ],
+        "needs_validation": false,
+        "notes": "Coordenada verificada en múltiples fuentes incluyendo la página oficial de la institución."
+      }
+    },
+    {
+      "legacy_id": "S-N-13",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.10895,
+          7.07426
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "HIGH",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-N-13",
+        "name": "Cañaveral",
+        "name_alt": [
+          "Centro Comercial Cañaveral",
+          "Parque Caracolí",
+          "Terminal Sur"
+        ],
+        "type": "TERMINAL",
+        "direction": "both",
+        "sequence_north_south": 13,
+        "sequence_south_north": 1,
+        "coordinates": [
+          -73.10895,
+          7.07426
+        ],
+        "address_reference": "Calle 30 # 25-71, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "HIGH",
+        "sources": [
+          "canaveral.com.co",
+          "mapcarta.com"
+        ],
+        "needs_validation": false,
+        "notes": "Terminal sur de la ruta. Coordenada verificada en página oficial del CC Cañaveral."
+      }
+    },
+    {
+      "legacy_id": "S-S-02",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.11,
+          7.076
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-02",
+        "name": "Paralela Cañaveral",
+        "name_alt": [
+          "Entrada Paralela Cañaveral"
+        ],
+        "type": "BUS_STOP",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 2,
+        "coordinates": [
+          -73.11,
+          7.076
+        ],
+        "address_reference": "Vía paralela al CC Cañaveral, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "LOW",
+        "sources": [
+          "moovitapp.com",
+          "bucaramanga.gov.co"
+        ],
+        "needs_validation": true,
+        "notes": "Parada de retorno en la vía paralela. Recorrido S→N toma vía diferente al N→S en el sector Cañaveral. Coordenada estimada."
+      }
+    },
+    {
+      "legacy_id": "S-S-03",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.11043,
+          7.07689
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-03",
+        "name": "Puente Peatonal Molinos",
+        "name_alt": [
+          "Molinos",
+          "Estación Molinos"
+        ],
+        "type": "BUS_STOP",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 3,
+        "coordinates": [
+          -73.11043,
+          7.07689
+        ],
+        "address_reference": "Sector Molinos - Payador, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com",
+          "metrolinea.gov.co"
+        ],
+        "needs_validation": true,
+        "notes": "Coordenada aproximada del sector Molinos-Payador en Floridablanca."
+      }
+    },
+    {
+      "legacy_id": "S-S-04",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.109,
+          7.082
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-04",
+        "name": "Hormigueros",
+        "name_alt": [
+          "Sector Hormigueros"
+        ],
+        "type": "BUS_STOP",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 4,
+        "coordinates": [
+          -73.109,
+          7.082
+        ],
+        "address_reference": "Sector Hormigueros, corredor Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "LOW",
+        "sources": [
+          "moovitapp.com"
+        ],
+        "needs_validation": true,
+        "notes": "Parada confirmada por Moovit. Coordenada estimada desde referencia de barrio."
+      }
+    },
+    {
+      "legacy_id": "S-S-05",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.1085,
+          7.087
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "LOW",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-05",
+        "name": "Payador",
+        "name_alt": [
+          "El Payador",
+          "Bosques del Payador"
+        ],
+        "type": "BUS_STOP",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 5,
+        "coordinates": [
+          -73.1085,
+          7.087
+        ],
+        "address_reference": "Sector El Payador, Floridablanca",
+        "municipality": "Floridablanca",
+        "certainty": "LOW",
+        "sources": [
+          "moovitapp.com"
+        ],
+        "needs_validation": true,
+        "notes": "Parada confirmada por Moovit. Coordenada estimada."
+      }
+    },
+    {
+      "legacy_id": "S-S-06",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.109,
+          7.091
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-06",
+        "name": "Estación Provenza Oriental",
+        "name_alt": [
+          "Provenza Oriental"
+        ],
+        "type": "TRANSFER_STATION",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 6,
+        "coordinates": [
+          -73.109,
+          7.091
+        ],
+        "address_reference": "Autopista Floridablanca sector Provenza, sentido sur-norte",
+        "municipality": "Floridablanca",
+        "certainty": "MEDIUM",
+        "sources": [
+          "maptons.com",
+          "metrolinea.gov.co"
+        ],
+        "needs_validation": false,
+        "notes": "Versión oriental de la estación Provenza para el sentido S→N. Infraestructura separada de la Occidental."
+      }
+    },
+    {
+      "legacy_id": "S-S-08",
+      "source_file": "stops.json",
+      "identity_status": "identity_unresolved",
+      "projection_eligible": false,
+      "location": {
+        "coordinates": [
+          -73.11274,
+          7.10416
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude_latitude",
+        "location_status": "legacy_unverified",
+        "confidence": null,
+        "legacy_confidence": "MEDIUM",
+        "evidence": [
+          {
+            "source_id": null,
+            "claim": "inherited_from_legacy_record",
+            "object_or_query": null
+          }
+        ]
+      },
+      "legacy_record": {
+        "id": "S-S-08",
+        "name": "Puerta del Sol",
+        "name_alt": [
+          "Glorieta Puerta del Sol"
+        ],
+        "type": "BUS_STOP",
+        "direction": "south_north",
+        "sequence_north_south": null,
+        "sequence_south_north": 8,
+        "coordinates": [
+          -73.11274,
+          7.10416
+        ],
+        "address_reference": "Intersección Carrera 27 con Calle 56, sector Puerta del Sol",
+        "municipality": "Bucaramanga",
+        "certainty": "MEDIUM",
+        "sources": [
+          "mapcarta.com"
+        ],
+        "needs_validation": false,
+        "notes": "Glorieta Puerta del Sol, nodo vial clave. Coordenada verificada en mapcarta."
+      }
+    }
+  ]
+}
